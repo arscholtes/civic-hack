@@ -1,6 +1,6 @@
 function initializeViz() {
   var placeholderDiv = document.getElementById("#tableauViz");
-  var url = "http://public.tableau.com/views/WorldIndicators/GDPpercapita";
+  var url = "https://public.tableau.com/views/indycivichack/Sheet1";
   var options = {
     // width: placeholderDiv.offsetWidth,
     // height: placeholderDiv.offsetHeight,
@@ -13,4 +13,4 @@ function initializeViz() {
   };
   viz = new tableau.Viz(placeholderDiv, url, options);
 }
-initializeViz();
+$(initializeViz);
